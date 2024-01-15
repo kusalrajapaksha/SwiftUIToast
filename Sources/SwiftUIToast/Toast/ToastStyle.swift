@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum ToastStyle {
+public enum ToastStyle {
     case info
     case secondary
     case success
@@ -16,7 +16,7 @@ enum ToastStyle {
     case warning
 }
 
-extension ToastStyle {
+public extension ToastStyle {
   var themeColor: Color {
       switch self {
       case .info:

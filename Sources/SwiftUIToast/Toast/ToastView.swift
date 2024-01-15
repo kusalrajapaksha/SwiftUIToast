@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-enum CornerMasks{
+public enum CornerMasks{
     case topLeft
     case topRight
     case bottomLeft
     case bottomRight
 }
 
-struct ToastView: View {
+public struct ToastView: View {
     var style: ToastStyle
     var message: String = "Undo"
     
@@ -75,7 +75,7 @@ struct ToastView: View {
         }
     }
     
-    var body: some View {
+    public var body: some View {
         HStack() {
 
             Text(message)

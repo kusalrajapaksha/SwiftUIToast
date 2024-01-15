@@ -33,10 +33,9 @@ struct ToastModifier: ViewModifier {
           ToastView(style: toast.style, message: toast.message, width: toast.width, cornerRadius: toast.cornerRadius, fontName: toast.fontName, fontSize: toast.fontSize, numberOfLines: toast.numberOfLines, maskedCorners: toast.maskedCorners, horizontalPadding: toast.horizontalPadding, verticalPadding: toast.verticalPadding)
         Spacer()
       }
-      //.transition(.move(edge: .top))
+  
       .transition(AnyTransition.opacity.animation(.linear))
-      //.transition(AnyTransition.scale.animation(.linear))
-      //.transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.1)))
+      
     }
   }
   

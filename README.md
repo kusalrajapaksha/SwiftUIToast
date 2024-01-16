@@ -2,10 +2,10 @@
 SwiftUIToast is a lightweight and customizable Swift package for displaying toast messages in SwiftUI applications. It allows you to easily show informative messages with various **styles**, **durations**, and **configurations.**
 
 ## Features
-* **Customizable Styles**: Choose from predefined styles such as info, success, warning, danger, and secondary, or customize your own.
+* **Customizable Styles**: Choose from predefined styles such as **info**, **success**, **warning**, **danger**, and **secondary**, or customize your own.
 * **Duration Control**: Set the duration for how long the toast message should be displayed on the screen.
-* **Flexible Layout**: Adjust the width, corner radius, font size, number of lines, and padding to suit your design requirements.
-* **Corner Masking**: Specify which corners should be rounded with the masked corners option.
+* **Flexible Layout**: Adjust the **width**, **corner radius**, **font size**, **number of lines**, and **padding** to suit your design requirements.
+* **Corner Masking**: Specify which corners should be rounded with the **masked corners** option.
 
 ## Installation
 Add the following dependency to your Package.swift file:

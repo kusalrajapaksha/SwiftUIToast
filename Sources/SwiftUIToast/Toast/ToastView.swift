@@ -21,13 +21,12 @@ public struct ToastView: View {
     var width:CGFloat = CGFloat.infinity
     var cornerRadius: CGFloat = 8
     
-    var fontName: String = ""
     var fontSize: CGFloat = 11
     var numberOfLines: Int = 1
     
     var maskedCorners: [CornerMasks]? = nil
-    var horizontalPadding: CGFloat = 16
-    var verticalPadding: CGFloat = 6
+    var horizontalPadding: CGFloat = 8
+    var verticalPadding: CGFloat = 8
     
     var topLeftCornerRadius: CGFloat = 0
     var topRightCornerRadius: CGFloat = 0
@@ -35,12 +34,11 @@ public struct ToastView: View {
     var bottomRightCornerRadius: CGFloat = 0
     
     
-    init(style: ToastStyle, message: String, width: CGFloat = CGFloat.infinity, cornerRadius: CGFloat = 8, fontName: String = "", fontSize: CGFloat = 11, numberOfLines: Int = 1, maskedCorners: [CornerMasks]? = nil, horizontalPadding: CGFloat = 8, verticalPadding: CGFloat = 8) {
+    init(style: ToastStyle, message: String, width: CGFloat = CGFloat.infinity, cornerRadius: CGFloat = 8, fontSize: CGFloat = 11, numberOfLines: Int = 1, maskedCorners: [CornerMasks]? = nil, horizontalPadding: CGFloat = 8, verticalPadding: CGFloat = 8) {
         self.style = style
         self.message = message
         self.width = width
         self.cornerRadius = cornerRadius
-        self.fontName = fontName
         self.fontSize = fontSize
         self.numberOfLines = numberOfLines
         self.maskedCorners = maskedCorners
@@ -103,6 +101,13 @@ public struct ToastView: View {
 }
 
 #Preview {
-    ToastView(style: .info, message: "This is a sample toast",width: 100, maskedCorners: [.topLeft, .topRight],horizontalPadding: 16, verticalPadding: 6)
+    VStack{
+        ToastView(style: .info, message: "This is a info toast",width: 100,horizontalPadding: 16, verticalPadding: 6)
+        ToastView(style: .success, message: "This is a success toast",width: 100,horizontalPadding: 16, verticalPadding: 6)
+        ToastView(style: .warning, message: "This is a warning toast",width: 100,horizontalPadding: 16, verticalPadding: 6)
+        ToastView(style: .danger, message: "This is a danger toast",width: 100,horizontalPadding: 16, verticalPadding: 6)
+        ToastView(style: .secondary, message: "This is a secondary toast",width: 100,horizontalPadding: 16, verticalPadding: 6)
+    }
+    
     
 }

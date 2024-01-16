@@ -30,7 +30,7 @@ struct ToastModifier: ViewModifier {
   @ViewBuilder func mainToastView() -> some View {
     if let toast = toast {
       VStack {
-          ToastView(style: toast.style, message: toast.message, width: toast.width, cornerRadius: toast.cornerRadius, fontName: toast.fontName, fontSize: toast.fontSize, numberOfLines: toast.numberOfLines, maskedCorners: toast.maskedCorners, horizontalPadding: toast.horizontalPadding, verticalPadding: toast.verticalPadding)
+          ToastView(style: toast.style, message: toast.message, width: toast.width, cornerRadius: toast.cornerRadius, fontSize: toast.fontSize, numberOfLines: toast.numberOfLines, maskedCorners: toast.maskedCorners, horizontalPadding: toast.horizontalPadding, verticalPadding: toast.verticalPadding)
         Spacer()
       }
   
@@ -40,7 +40,7 @@ struct ToastModifier: ViewModifier {
   }
   
   private func showToast() {
-    guard var toast = toast else { return }
+    guard let toast = toast else { return }
     
     UIImpactFeedbackGenerator(style: .light)
       .impactOccurred()

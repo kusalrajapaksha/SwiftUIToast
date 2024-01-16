@@ -14,21 +14,19 @@ public struct Toast: Equatable{
     var width: Double = .infinity
     var cornerRadius: CGFloat = 8
     
-    var fontName: String = ""
     var fontSize: CGFloat = 11
     var numberOfLines: Int = 1
     
     var maskedCorners: [CornerMasks]? = nil
-    var horizontalPadding: CGFloat = 16
-    var verticalPadding: CGFloat = 6
+    var horizontalPadding: CGFloat = 8
+    var verticalPadding: CGFloat = 8
     
-    public init(style: ToastStyle, message: String, duration: Double, width: Double, cornerRadius: CGFloat, fontName: String, fontSize: CGFloat, numberOfLines: Int, maskedCorners: [CornerMasks]? = nil, horizontalPadding: CGFloat, verticalPadding: CGFloat) {
+    public init(style: ToastStyle, message: String, duration: Double = 1, width: Double = .infinity, cornerRadius: CGFloat = 8, fontSize: CGFloat = 11, numberOfLines: Int = 1, maskedCorners: [CornerMasks]? = nil, horizontalPadding: CGFloat = 8, verticalPadding: CGFloat = 8) {
         self.style = style
         self.message = message
         self.duration = duration
         self.width = width
         self.cornerRadius = cornerRadius
-        self.fontName = fontName
         self.fontSize = fontSize
         self.numberOfLines = numberOfLines
         self.maskedCorners = maskedCorners

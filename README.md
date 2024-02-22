@@ -1,4 +1,7 @@
 # SwiftUIToast
+
+![SwiftUI Toasts](https://github.com/kusalrajapaksha/SwiftUIToast/assets/72430450/213d807c-b26f-46b4-913d-f1fea71b7bd2)
+
 SwiftUIToast is a lightweight and customizable Swift package for displaying toast messages in SwiftUI applications. It allows you to easily show informative messages with various **styles**, **durations**, and **configurations.**
 
 ## Features

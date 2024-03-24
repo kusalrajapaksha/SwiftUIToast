@@ -51,6 +51,11 @@ VStack{
 
 Feel free to explore and customize the provided styles to fit your application's theme.
 
+## Toast Layout Guide
+
+<img width="872" alt="Screenshot 2024-03-25 at 00 44 12" src="https://github.com/kusalrajapaksha/SwiftUIToast/assets/72430450/e155a9d6-86a7-479a-836d-07383166d760">
+
+
 ```
 import SwiftUI
 import SwiftUIToast
